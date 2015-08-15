@@ -7,7 +7,123 @@
   margin: 0;
 }
 
+.fuelux .img-rounded{
+  height: 100px;
+}
+
 .navbar-inner{
   line-height: 20px;
 }
+
+.pageTitle {
+    color: #aaa;
+    font-size: 1em;
+    letter-spacing: .15em;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: .5em;
+    padding-bottom: 40px;
+    text-align: left;    
+}
+
+.postDate{
+  padding-bottom: 10px;
+  padding-top: 25px;
+}
+
+.postSummary{
+
+}
+
+.sidebar{
+  text-align: center;
+  height: 300px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+
+}
+
+
+.social-nav {
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  margin: 10px auto;
+}
+
+.fuelux ul.social-nav{
+  padding: 0;
+  margin: 0;
+}
+
+.social-nav li {
+  display: inline-block;
+}
+.social-nav a {
+  display: inline-block;
+  float: left;
+  width: 38px;
+  height: 38px;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 38px;
+  background: #ccc;
+  position: relative;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+
+
+.model-9 li {
+  margin: 0 10px;
+}
+.model-9 a {
+  color: #fff;
+  overflow: hidden;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.model-9 a:hover {
+  background: #ccc;
+}
+.model-9 a:hover .fa {
+  -moz-animation: 0.4s icon-move linear 0s;
+  -webkit-animation: 0.4s icon-move linear 0s;
+  animation: 0.4s icon-move linear 0s;
+}
+
+.model-9 .twitter:hover {
+  color: #00ACED;
+}
+.model-9 .facebook:hover {
+  color: #3B579D;
+}
+.model-9 .google-plus:hover {
+  color: #DD4A3A;
+}
+.model-9 .linkedin:hover {
+  color: #007BB6;
+}
+.model-9 .pinterest:hover {
+  color: #CB2026;
+}
+.model-9 .github:hover {
+  color: #000;
+}
+
+
+
+
 

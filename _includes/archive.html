@@ -1,6 +1,43 @@
 <h2>Past Posts</h2>
-<ul>
-  {% for post in site.posts %}
-    <li>{{ post.date | date: "%Y - %B" }} <a href="{{ post.url }}">{{ post.title }}</a></li>	
+{% for category in site.categories %}
+     <div class="catbloc" id="{{ category | first | remove:' ' }}">
+         <h5>{{ category | first }}</h5>
+         
+         <ul>
+            {% for posts in category %}
+              {% for post in posts %}
+                {% if post.url %}
+                  <li>
+                    <a href="{{ post.url }}">
+                      <time>{{ post.date | date: "%-d %B %Y" }}</time>
+                      {{ post.title }}
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+         </ul>
+     </div>
+ {% endfor %}
+
+
+
+
+<!-- <section id="archive">
+  <h3>This year's posts</h3>
+  {%for post in site.posts %}
+    {% unless post.next %}
+      <ul class="this">
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        </ul>
+        <h3>{{ post.date | date: '%Y' }}</h3>
+        <ul class="past">
+      {% endif %}
+    {% endunless %}
+      <li><time>{{ post.date | date:"%d %b" }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
-</ul>
+  </ul>
+</section> -->

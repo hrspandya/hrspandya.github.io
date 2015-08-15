@@ -240,13 +240,13 @@
 }
 
 .fuelux a {
-  color: #0088cc;
+  color: #757778;
   text-decoration: none;
 }
 
 .fuelux a:hover {
-  color: #005580;
-  text-decoration: underline;
+  color: #41A9DE;
+  text-decoration: none;
 }
 
 .fuelux .img-rounded {
@@ -3124,7 +3124,7 @@ textarea.span1,
 }
 
 .fuelux .collapse.in {
-  height: auto;
+  height: auto !important;
 }
 
 .fuelux .close {
