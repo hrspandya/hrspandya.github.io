@@ -1,5 +1,5 @@
 ---
-layout: layout
+layout: post
 title: Part two on how I built my blog
 category: Coding
 tags: jekyll github rss
@@ -77,30 +77,5 @@ image: post_two.jpg
 	</div>
 </div> 
 
-<div class="row">
-	<div class="span3 columns">&nbsp;</div>
-	<div class="span6 column">
-			<p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-chevron-left"></i></a> 	{% endif %}   {% if page.next.url %} 	<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}"><i class="icon-chevron-right"></i></a> 	{% endif %} </p>  
-	</div>
-</div>
-	
-<div class="row">
-	<div class="span9 columns">    
-		<h2>Comments Section</h2>
-	    <p>Feel free to comment on the post but keep it clean and on topic.</p>	
-		<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	    /* * * CONFIGURATION VARIABLES * * */
-	    var disqus_shortname = 'harshpandya';
-	    
-	    /* * * DON'T EDIT BELOW THIS LINE * * */
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-	</div>
-</div>
+<
 
