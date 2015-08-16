@@ -34,7 +34,7 @@ image: post_one.jpg
 	  <h2>Jekyll</h2>
 	  <p><a href="http://jekyllrb.com/" target="_blank" title="Go to Jekyll">Jekyll</a> is a static site generator.  It is fairly easy to work with and it will allow you to create your blogs (each as a file) and it will know how to plug in simple blog aware properties.</p>
 	  <h2><small>Get some code</small></h2>
-	  <p>To get started here I went the typical <i>lazy route</i> and ripped down a friends GitHub page that was using Jekyll.  So feel free to <a href="https://github.com/erjjones/erjjones.github.com/zipball/master">rip down my GitHub page</a> if you wish or <a href="https://github.com/erjjones/erjjones.github.com" target="_blank">fork my GitHub page</a>.  I'm sure the tutorials that are mentioned at the top of this blog go into great detail on how to <code>rake</code> everything together but I don't always roll that way so to each his own here on this step.</p>
+	  <p>To get started here I went the typical <i>lazy route</i> and ripped down a friends GitHub page that was using Jekyll.  So feel free to <a href="https://github.com/hrspandya/hrspandya.github.io/zipball/master">rip down my GitHub page</a> if you wish or <a href="https://github.com/hrspandya/hrspandya.github.io" target="_blank">fork my GitHub page</a>.  I'm sure the tutorials that are mentioned at the top of this blog go into great detail on how to <code>rake</code> everything together but I don't always roll that way so to each his own here on this step.</p>
 	  <h2><small>You reap what you sow</small></h2>
 	  <p>Next I copied the files into my repository and started looking around to see how it was put together.  Since I like to dive into things without much reading I was quickly confused how to get the site to load on my local machine.  Luckily for you I have figured that out ... after asking my buddy of course!</p>
 	  <h2><small>Install Ruby and Jekyll</small></h2>
@@ -73,10 +73,10 @@ image: post_one.jpg
 	   	<li>Create a button that links to the <i>new</i> issue section of that repository.</li>
 	  </ul>	
 	  <p>Now followers can leave you feedback and you can manage it accordingly.</p>
-	  <p><a class="btn btn-mini btn-info" href="https://github.com/erjjones/Feedback/issues/new" title="Leave Erjjones feedback using GitHub" target="_blank"><i class="icon-comment icon-white"></i> Leave me feedback</a></p>
+	  <p><a class="btn btn-mini btn-info" href="https://github.com/hrspandya/Feedback/issues/new" title="Leave hrspandya feedback using GitHub" target="_blank"><i class="icon-comment icon-white"></i> Leave me feedback</a></p>
 	  <hr>
 	  <h2>Dynamic GitHub Followers and Repository Buttons</h2>
-	  <p>I wanted to have a button with my number of GitHub followers and GitHub repositories that was dynamic.  GitHub provides an api of each users information <code>https://api.github.com/users/erjjones</code>.  Try it out with your GitHub username in place of mine.  <strong>Open a browser</strong> and paste it in the address bar.</p>
+	  <p>I wanted to have a button with my number of GitHub followers and GitHub repositories that was dynamic.  GitHub provides an api of each users information <code>https://api.github.com/users/hrspandya</code>.  Try it out with your GitHub username in place of mine.  <strong>Open a browser</strong> and paste it in the address bar.</p>
 	  <h2><small>Cross Domain Problems</small></h3>
 	  <p>Locally I was able to get the Ajax call to the api to work just fine.  However, as soon as I pushed my code to GitHub, no go.  This is when I discovered that I was having a classic case of cross domain problems.</p>
 	  <script src="https://gist.github.com/1996394.js"> </script>
@@ -86,7 +86,7 @@ image: post_one.jpg
 	  <p>Fortunately <a href="http://developer.github.com/v3/#json-p-callbacks" title="Go to GitHub Api documentation" target="_blank">GitHub supports JSONP callbacks</a> and I found a <a href="https://gist.github.com/" target="_blank" title="Go to more information about what a Gist is">Gist</a> by another developer that I was able to tweak to achieve my end result.</p>
 	  <script src="https://gist.github.com/1996286.js"> </script>
 	  <p>Problem solved and now I have dynamic GitHub follower and GitHub repository buttons.</p>
-	  <p><a class="btn btn-success btn-mini" id="gf" href="https://github.com/erjjones/followers" title="Go to Erjjones GitHub followers page" target="_blank"></a>&nbsp;<a class="btn btn-success btn-mini" id="gfr" href="https://github.com/erjjones/repositories" title="Go to Erjjones GitHub repositories page" target="_blank"></a></p>
+	  <p><a class="btn btn-success btn-mini" id="gf" href="https://github.com/hrspandya/followers" title="Go to hrspandya GitHub followers page" target="_blank"></a>&nbsp;<a class="btn btn-success btn-mini" id="gfr" href="https://github.com/hrspandya/repositories" title="Go to hrspandya GitHub repositories page" target="_blank"></a></p>
 	  <hr>
 	  <h2>Social Buzz Widgets</h2>
 	  <p>In order to track how each post is doing in the world of social media I added three social widgets: Twitter, Google+ and Reddit.</p>
@@ -94,7 +94,7 @@ image: post_one.jpg
 	  <p>This is probably the most documented and well understood widget.  Go to the <a href="https://dev.twitter.com/docs/twitter-for-websites" title="Go to the Twitter Developer documentation" target="_blank">Twitter Developer's page</a> to get more information.</p>
 	  <script src="https://gist.github.com/1996683.js"> </script>
 	  <p>Just replace your Twitter username with mine and you are good to go.</p>
-	  <p><a href="https://twitter.com/share" class="twitter-share-button" data-via="erjjones">Tweet</a></p>
+	  <p><a href="https://twitter.com/share" class="twitter-share-button" data-via="hrspandya">Tweet</a></p>
 	  <br/>
 	  <h2><small>Google+ Widget</small></h2>	
 	  <p>For the Google Plus widget I don't have it hooked up to my Google+ account.  This widget is really easy to plug and play into your page and will track just the page.  Go to the <a href="http://www.google.com/webmasters/+1/button/" target="_blank" title="Go to Google Plus documentation">Google Plus button documentation</a> to learn more about this button.</p>
@@ -107,13 +107,13 @@ image: post_one.jpg
 	  <p>By placing <code>&#123;&#123; page.url &#125;&#125;</code> Jekyll will put the url to the page.</p>
 	  <script src="https://gist.github.com/1996827.js"> </script>
 	  <br/>
-	  <p><script type="text/javascript" src="http://www.reddit.com/buttonlite.js?i=2&styled=off&url=http://erjjones.github.com{{ page.url }}&newwindow=1"></script></p> 	  
+	  <p><script type="text/javascript" src="http://www.reddit.com/buttonlite.js?i=2&styled=off&url=http://hrspandya.github.io{{ page.url }}&newwindow=1"></script></p> 	  
 	  <hr>
 	  <h2>Disqus</h2>
 	  <p>To me it made perfect sense to use <a href="http://disqus.com/" target="_blank" title="Go to Disqus">Disqus</a> as a comments provider.  As far as I can tell lots of sites are using this provider so we'll see how it goes.  When you setup an account Disqus will have you setup a <i>shortname</i> that you will use in your Disqus widget code.  The <i>Admin</i> tools in Disqus will allow you to delete comments and set a list of blackout words.</p>	  
 	  <h2><small>Total Comments</small></h2>	
-	  <p>To get the <a href="http://erjjones.github.com{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}"></a> you can put the following code anywhere on your page or any other page as long as you use the url you would like and have the Disqus Widget code on your page, it just works.</p>
-	  <p><pre><code>&lt;a href="http://erjjones.github.com&#123;&#123; page.url &#125;&#125;#disqus_thread" data-disqus-identifier="&#123;&#123; page.url &#125;&#125;"&gt;&lt;/a&gt;</code></pre></p>	  
+	  <p>To get the <a href="http://hrspandya.github.io{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}"></a> you can put the following code anywhere on your page or any other page as long as you use the url you would like and have the Disqus Widget code on your page, it just works.</p>
+	  <p><pre><code>&lt;a href="http://hrspandya.github.io&#123;&#123; page.url &#125;&#125;#disqus_thread" data-disqus-identifier="&#123;&#123; page.url &#125;&#125;"&gt;&lt;/a&gt;</code></pre></p>	  
 	  <h2><small>Disqus Widget Code</small></h3>	
 	  <script src="https://gist.github.com/1998023.js"> </script>
 	  <hr>
@@ -135,13 +135,13 @@ image: post_one.jpg
 	  <hr>
 	  <h2>Instapaper</h2>
 	  <p>Adding an <a href="http://www.instapaper.com" target="_blank" title="Go to Instapaper">Instapaper</a> link is just another piece of functionality to enhance integration with other web tools.  All you need to do is build the link below and add your <i>url</i> and <i>title</i>.</p>	
-	  <p><pre><code>http://www.instapaper.com/hello2?url=http://erjjones.github.com&#123;&#123; page.url &#125;&#125;&title=&#123;&#123; page.title &#125;&#125;</code></pre></p>
-	  <p><a href="http://www.instapaper.com/hello2?url=http://erjjones.github.com{{ page.url }}&title={{ page.title }}" title="Save {{ page.title }} to Instapaper" target="_blank">Read later</a></p>
+	  <p><pre><code>http://www.instapaper.com/hello2?url=http://hrspandya.github.io&#123;&#123; page.url &#125;&#125;&title=&#123;&#123; page.title &#125;&#125;</code></pre></p>
+	  <p><a href="http://www.instapaper.com/hello2?url=http://hrspandya.github.io{{ page.url }}&title={{ page.title }}" title="Save {{ page.title }} to Instapaper" target="_blank">Read later</a></p>
 	  <hr>	  
 	  <h2>Y Combinator Submit Icon</h2>
 	  <p><a href="http://news.ycombinator.com/" target="_blank" title="Go to news.ycombinator.com">Y Combinator</a> is my all time favorite news feed and adding a Y Combinator submit option just seemed right.  All you need to do is build the link below and add your <i>url</i> and <i>title</i>.</p>	
-	  <p><pre><code>http://news.ycombinator.com/submitlink?u=http://erjjones.github.com&#123;&#123; page.url &#125;&#125;&t=&#123;&#123; page.title &#125;&#125;</code></pre></p>
-	  <p><a href="http://news.ycombinator.com/submitlink?u=http://erjjones.github.com{{ page.url }}&t={{ page.title }}" target="_blank"><img src="/img/yc500.gif" title="Submit {{ page.title }} to Hacker News" /></a></p>
+	  <p><pre><code>http://news.ycombinator.com/submitlink?u=http://hrspandya.github.io&#123;&#123; page.url &#125;&#125;&t=&#123;&#123; page.title &#125;&#125;</code></pre></p>
+	  <p><a href="http://news.ycombinator.com/submitlink?u=http://hrspandya.github.io{{ page.url }}&t={{ page.title }}" target="_blank"><img src="/img/yc500.gif" title="Submit {{ page.title }} to Hacker News" /></a></p>
 	  <hr>		  	  	  
 	  <h2>In Conclusion</h2>
 	  <p>I hope this sparks you to try out GitHub, Jekyll, Twitter Bootstrap and other open source web resources.  I have just begun to scratch the surface here and this blog doesn't attempt to cover all of details but I would like to hear what other cool integrations people are doing on their blogs.</p>	  

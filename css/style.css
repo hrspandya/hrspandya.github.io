@@ -27,6 +27,10 @@
     text-align: left;    
 }
 
+.fuelux a.footer_feedback{
+  color: #00ACED;
+}
+
 .postDate{
   padding-bottom: 10px;
   padding-top: 25px;

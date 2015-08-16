@@ -14,8 +14,8 @@ image: post_two.jpg
 <div class="row">
 	<div class="span9 columns">
 	  <h2>Preface</h2>
-	  <p>This is a follow up from my last post <a href="http://erjjones.github.com/blog/How-I-built-my-blog-in-one-day/" title="Go to How I built my blog in one day"><i>How I built my blog in one day</i></a>.  There were several items I left out and several more that I have refined.  This blog still only begins to scratch the surface on what someone can do with Jekyll and bootstraping other technologies, so please comment and share your ideas.</p>  	 	  
-	  <p><a href="https://github.com/erjjones/erjjones.github.com/zipball/master" class="btn btn-info">Download source</a></p>
+	  <p>This is a follow up from my last post <a href="http://hrspandya.github.io/blog/How-I-built-my-blog-in-one-day/" title="Go to How I built my blog in one day"><i>How I built my blog in one day</i></a>.  There were several items I left out and several more that I have refined.  This blog still only begins to scratch the surface on what someone can do with Jekyll and bootstraping other technologies, so please comment and share your ideas.</p>  	 	  
+	  <p><a href="https://github.com/hrspandya/hrspandya.github.io/zipball/master" class="btn btn-info">Download source</a></p>
 	  <hr>	  
 	  <h2>Jekyll</h2>	  
 	  <h2><small>Post Configuration</small></h2>
@@ -33,7 +33,7 @@ image: post_two.jpg
 	  <p><strong>tag_index.html</strong> is a Jekyll layout that will display the posts on the tag page.</p>	  
 	  <script src="https://gist.github.com/2155150.js"></script>
 	  <br/>
-	  <p><strong>Generate the tag pages</strong> - The Jekyll module tag_gen.rb will generate a "tags" folder in the "_site" directory.  The module will also generate subfolders for each tag listed on the posts.  If you add new tags you'll have to build again or stop and start your Jekyll server. For GitHub user pages you will want to copy the "tags" folder from the "_site" folder into the root folder inline with "_site".  See <a href="https://github.com/erjjones/erjjones.github.com" title="Go to https://github.com/erjjones/erjjones.github.com" target="_blank">my GitHub user page repo</a> layout to understand more.</p>	  
+	  <p><strong>Generate the tag pages</strong> - The Jekyll module tag_gen.rb will generate a "tags" folder in the "_site" directory.  The module will also generate subfolders for each tag listed on the posts.  If you add new tags you'll have to build again or stop and start your Jekyll server. For GitHub user pages you will want to copy the "tags" folder from the "_site" folder into the root folder inline with "_site".  See <a href="https://github.com/hrspandya/hrspandya.github.io" title="Go to https://github.com/hrspandya/hrspandya.github.io" target="_blank">my GitHub user page repo</a> layout to understand more.</p>	  
 	  <h2><small>Tag Lists</small></h2>
 	  <p>List all tags within your site.</p>	  
 	  <ul>
@@ -56,7 +56,7 @@ image: post_two.jpg
 	  <script src="https://gist.github.com/2026102.js"> </script>
 	  <hr>	  
 	  <h2>RSS Feed</h2>
-	  <p>Initially when using a GitHub user page I thought that I could use <code>https://github.com/erjjones.atom</code> to hook up my RSS feed on <a href="http://feedburner.google.com" title="Go to feedburner.google.com">feed burner</a>, but I had a hard time getting Feed Burner to register it.  I noticed on <a href="http://zachholman.com/" title="Go to Zach Holmans site">Zach Holman's</a> user page he had a <code>atom.xml</code> file and after further review you see that it is configured to register exactly what I needed to setup the RSS feed.  Save this file to the root directory of your site and then you can register something like <code>http://erjjones.github.com/atom.xml</code> to feed burner and now you have an RSS feed for your blog.</p>
+	  <p>Initially when using a GitHub user page I thought that I could use <code>https://github.com/hrspandya.atom</code> to hook up my RSS feed on <a href="http://feedburner.google.com" title="Go to feedburner.google.com">feed burner</a>, but I had a hard time getting Feed Burner to register it.  I noticed on <a href="http://zachholman.com/" title="Go to Zach Holmans site">Zach Holman's</a> user page he had a <code>atom.xml</code> file and after further review you see that it is configured to register exactly what I needed to setup the RSS feed.  Save this file to the root directory of your site and then you can register something like <code>http://hrspandya.github.io/atom.xml</code> to feed burner and now you have an RSS feed for your blog.</p>
 	  <script src="https://gist.github.com/2026283.js"></script>
 	  <hr>
 	  <h2>README (.md)</h2>
