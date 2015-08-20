@@ -1,10 +1,11 @@
 .fuelux body {
   color: #aaa;
-  font-family: Open Sans,Helvetica Neue,sans-serif;
-  font-size: .9em;
-  letter-spacing: -.02em;
-  line-height: 1.4;
+  font-family: 'helvetica Neue',arial,sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.00em;
+  line-height: 1.7;
   margin: 0;
+  word-spacing: 0.2em;
 }
 
 .fuelux .img-rounded{
